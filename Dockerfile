@@ -4,7 +4,7 @@ MAINTAINER Aaronstar, <jfeldt19@gmail.com>
 
 RUN apt-get -y update \
     && apt-get -y upgrade \
-    && apt-get -y install curl openssh-server ca-certificates tzdata \
+    && apt-get -y install curl openssh-server ca-certificates tzdata git \
     && adduser -h /home/container container
 
 USER container
